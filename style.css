@@ -10,32 +10,85 @@
 
 /* Regole dell'Header */
 .container {
-  width: 65vw;
+  max-width: 86rem;
   height: 100px;
-  margin: 0 auto;
-  border: solid 1px #000;
+  margin: auto;
   display: flex;
   align-items: flex-end;
+  padding: 0 20px;
+}
+
+.nav-bar {
+  height: 40px;
+  width: 100%;
+  display: flex;
 }
 
 .header-left {
-  width: 40%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header-left a {
-  margin-left: 20px;
+  margin-left: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8B959E;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .header-right {
-  width: 60%;
+  margin-left: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
+}
+
+.header-right ul {
+  list-style-type: none;
 }
 
 .header-right li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #8B959E;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-left a:hover, .header-right a:hover {
+  color: #000;
+}
+
+.header-left a:focus, .header-right a:focus {
+  color: #000;
+}
+
+.pulsante {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pulsante button {
+  background-color: #EB008D;
+  padding: 10px 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+
+.pulsante button:hover {
+  background-color: #d2007e;
 }
