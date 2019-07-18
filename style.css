@@ -5,6 +5,37 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: red;
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Regole dell'Header */
+.container {
+  width: 65vw;
+  height: 100px;
+  margin: 0 auto;
+  border: solid 1px #000;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-left {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-left a {
+  margin-left: 20px;
+}
+
+.header-right {
+  width: 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.header-right li {
+  display: inline-block;
+  margin-left: 20px;
 }
