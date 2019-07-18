@@ -8,7 +8,19 @@
 /* Roboto Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-/* Regole dell'Header */
+/* Beta */
+.beta {
+  text-transform: none;
+  position: relative;
+  font-size: 0.75rem;
+  color: rgb(235, 0, 141);
+  bottom: 1rem;
+  line-height: normal;
+  font-weight: 600;
+  margin-right: -0.8rem;
+}
+
+/* Regole generali dell'Header */
 .container {
   max-width: 86rem;
   height: 100px;
@@ -17,20 +29,25 @@
   align-items: flex-end;
   padding: 0 20px;
 }
-
 .nav-bar {
   height: 40px;
   width: 100%;
   display: flex;
 }
+.header-left a:hover, .header-right a:hover {
+  color: #000;
+}
+.header-left a:focus, .header-right a:focus {
+  color: #000;
+}
 
+  /* Sezione sinistra dell'Header */
 .header-left {
   display: flex;
   align-items: center;
 }
-
 .header-left a {
-  margin-left: 30px;
+  margin-left: 29px;
   text-decoration: none;
   text-transform: uppercase;
   color: #8B959E;
@@ -39,22 +56,20 @@
   font-weight: 400;
 }
 
+  /* Sezione destra dell'Header */
 .header-right {
   margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 .header-right ul {
   list-style-type: none;
 }
-
 .header-right li {
   display: inline-block;
   margin-left: 30px;
 }
-
 .header-right a {
   text-decoration: none;
   color: #8B959E;
@@ -63,20 +78,12 @@
   font-weight: 400;
 }
 
-.header-left a:hover, .header-right a:hover {
-  color: #000;
-}
-
-.header-left a:focus, .header-right a:focus {
-  color: #000;
-}
-
+  /* Sezione bottone dell'Header */
 .pulsante {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 .pulsante button {
   background-color: #EB008D;
   padding: 10px 24px;
@@ -88,7 +95,52 @@
   border-radius: 30px;
   margin-left: 30px;
 }
-
 .pulsante button:hover {
   background-color: #d2007e;
+}
+
+  /* Sezione Menu a cascata Accounts*/
+#dropbox {
+  position: relative;
+}
+#drop {
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 35px;
+  right: -32px;
+  display: none;
+}
+#drop a {
+  display: block;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+#drop div:hover {
+  background-color: #f3f4f5;
+}
+#drop.active {
+display: block;
+}
+  /* Sezione Menu a cascata Products*/
+#tropbox {
+  position: relative;
+}
+#trop {
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 35px;
+  right: -92px;
+  display: none;
+  width: 240px;
+}
+#trop a {
+  display: block;
+  text-align: left;
+  padding: 1rem 2rem;
+}
+#trop div:hover {
+  background-color: #f3f4f5;
+}
+#trop.active {
+  display: block;
 }
