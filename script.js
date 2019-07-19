@@ -3,12 +3,7 @@ $( document ).ready(function() {
   //Drop menu
   $("#dropbox > a").click(
     function(){
-      $("#drop").toggleClass("active");
-    }
-  );
-  $("#tropbox > a").click(
-    function(){
-      $("#trop").toggleClass("active");
+      $(this).next("div").toggleClass("active");
     }
   );
   // Hamburger menu

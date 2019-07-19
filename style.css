@@ -111,7 +111,7 @@
 #dropbox {
   position: relative;
 }
-#drop {
+.drop {
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 35px;
@@ -119,22 +119,19 @@
   display: none;
   background-color: #fff;
 }
-#drop a {
+.drop a {
   display: block;
   text-align: center;
   padding: 1rem 2rem;
 }
-#drop div:hover {
+.drop div:hover {
   background-color: #f3f4f5;
 }
-#drop.active {
+.drop.active {
 display: block;
 }
   /* Sezione Menu a cascata Products*/
-#tropbox {
-  position: relative;
-}
-#trop {
+.trop {
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 35px;
@@ -143,15 +140,15 @@ display: block;
   width: 240px;
   background-color: #fff;
 }
-#trop a {
+.trop a {
   display: block;
   text-align: left;
   padding: 1rem 2rem;
 }
-#trop div:hover {
+.trop div:hover {
   background-color: #f3f4f5;
 }
-#trop.active {
+.trop.active {
   display: block;
 }
 
